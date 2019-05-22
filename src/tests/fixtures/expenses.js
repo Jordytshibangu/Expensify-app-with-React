@@ -16,6 +16,6 @@ export default  [{
     id : '3',
     description : 'text',
     note : 'your note',
-    amount : 0, 
+    amount : 10, 
     createAt : moment(0).add(4,'days').valueOf()
 }]

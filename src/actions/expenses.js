@@ -2,7 +2,6 @@ import {createStore, combineReducers} from 'redux'
 import uuid from 'uuid';
 import database from '../firebase/firebase'
 
-
 /*
 =======================================
 ||                                   ||
