@@ -1,3 +1,5 @@
+import { database } from "firebase";
+import { setExpenses } from "../actions/expenses";
 
 // Expenses reducers 
 const expensesReducerDefaultState = [];
@@ -20,10 +22,12 @@ const expensesReducer = (state = expensesReducerDefaultState, action) =>{
                 }else {
                     return expense;
                 }
-            })       
+            })  
+            case 'SET_EXPENSES' : 
+                return action.expenses;     
         default : 
         return state;
     }
 };
 
-export default expensesReducer;
+export default expensesReducer 
