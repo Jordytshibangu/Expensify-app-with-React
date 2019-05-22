@@ -98,7 +98,7 @@ test('should fetch the expenses from firbase', (done)=>{
     store.dispatch(startsetExpenses()).then(() =>{
         const actions =  store.getActions()
         expect(actions[0]).toEqual({
-            type : 'SET_EXPENSES',
+            type :'SET_EXPENSES',
             expenses
         })
         done()
