@@ -15,7 +15,6 @@ beforeEach((done) =>{
     database.ref('expenses').set(expensesData).then(() => done());
     
 })
-
 test('should setup remove expense action object', ()=>{
     const action = removeExpense({id : '123abcd'});
     expect(action).toEqual({
@@ -38,7 +37,6 @@ test('should setup add expense action object with provided value', ()=>{
         expense : expenses[2]
     })
 })
-
 test('should add expense to database and store', (done) =>{
     const store = createMockStore({})
     const expenseData = {
@@ -84,7 +82,6 @@ test('should add expense to database and store', (done) =>{
             done();
         })  
     })
-    
 })
 test('should set up set expense action object with data ', () =>{
  const action = setExpenses(expenses)
