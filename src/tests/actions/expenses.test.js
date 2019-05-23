@@ -4,7 +4,6 @@ import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import database from '../../firebase/firebase'
 
-
 const createMockStore = configureMockStore([thunk])
 beforeEach((done) =>{
     const expensesData = {};
@@ -12,7 +11,6 @@ beforeEach((done) =>{
         expensesData[id] = { description, note, amount, createAt}
     })
     database.ref('expenses').set(expensesData).then(() => done());
-    
 })
 test('should setup remove expense action object', ()=>{
     const action = removeExpense({id : '123abcd'});
