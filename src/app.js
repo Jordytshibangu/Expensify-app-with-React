@@ -15,7 +15,7 @@ import './firebase/firebase'
 
 
 const store = configureStore();
-console.log('test')
+console.log('test a new test')
 const jsx = (
     <Provider store={store}>
         <AppRouter />
