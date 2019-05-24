@@ -14,21 +14,21 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={1000}
     createAt={86400000}
     description="i made it"
-    id="1"
+    id="1a1"
     note="my note"
   />
   <ExpenseListItem
     amount={100}
     createAt={-345600000}
     description="txt"
-    id="2"
+    id="2b2"
     note="your note"
   />
   <ExpenseListItem
     amount={0}
     createAt={345600000}
     description="text"
-    id="3"
+    id="3c3"
     note="your note"
   />
 </div>

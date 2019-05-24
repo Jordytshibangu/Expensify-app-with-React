@@ -4,7 +4,7 @@ exports[`should render expense list item 1`] = `
 <div>
   <Link
     replace={false}
-    to="/edit/1"
+    to="/edit/1a1"
   >
     <h3>
       i made it
